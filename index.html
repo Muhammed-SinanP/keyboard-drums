@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard Player</title>
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+<body class="bg-gray-600 flex flex-col gap-10 justify-center items-center h-screen">
+    <h1 class="text-4xl font-bold tracking-wide text-blue-400 drop-shadow-md">KEYBOARD DRUMS</h1>
+    <div class="flex gap-4">
+        <div class="card" id="s">S</div>
+        <div class="card" id="d">D</div>
+        <div class="card" id="f">F</div>
+        <div class="card" id="j">J</div>
+        <div class="card" id="k">K</div>
+        <div class="card" id="l">L</div>
+    </div>
+    <div class="peer"><ion-icon name="alert-circle-outline" class="text-2xl font-semibold text-blue-400 cursor-pointer hover:scale-110"></ion-icon></div>
+    <div class="border-2 border-blue-400 p-8 rounded-lg text-lg text-blue-400 tracking-wide font-serif invisible peer-hover:visible peer-active:visible">
+        " Click on the cards or press the respective letters on your keyboard "
+    </div>
+    
+    <audio id="s-sound" src="./public/audios/sounds_crash.mp3" type="audio/mpeg"></audio>
+    <audio id="d-sound" class="d"><source src="./public/audios/sounds_tom-4.mp3"></audio>
+    <audio id="f-sound" class="f"><source src="./public/audios/sounds_snare.mp3"></audio>
+    <audio id="j-sound" class="j"><source src="./public/audios/sounds_tom-1.mp3"></audio>
+    <audio id="k-sound" class="k"><source src="./public/audios/sounds_tom-2.mp3"></audio>
+    <audio id="l-sound" class="l"><source src="./public/audios/sounds_tom-3.mp3"></audio>
+
+
+
+    <script src="./public/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

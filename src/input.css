@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card{
+        @apply border-white select-none border-2 w-20 h-20 flex items-center justify-center text-4xl font-semibold text-white bg-gray-900 rounded-lg shadow-blue-500 shadow-md cursor-pointer transition-all duration-200 ease-in;
+    }
+    .card:hover ,.selected{
+        @apply scale-105 shadow-lg shadow-blue-400 bg-gray-950;
+    }
+    .card:active{
+        @apply active:bg-black border-blue-600
+    }
+}
